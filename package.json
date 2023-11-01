@@ -1,0 +1,20 @@
+{
+  "name": "dupatta",
+  "version": "1.0.0",
+  "description": "a length of material worn as a scarf or head covering, typically with a salwar, by women from South Asia.",
+  "main": "main.js",
+  "sideEffects": false,
+  "scripts": {
+    "build": "esbuild --bundle src/index.ts --format=esm --outfile=dist/esm.js"
+  },
+  "keywords": [
+    "fp",
+    "js",
+    "maybe"
+  ],
+  "author": "gmbntt@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.19.5"
+  }
+}
