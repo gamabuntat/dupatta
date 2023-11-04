@@ -1,20 +1,23 @@
 {
-  "name": "dupatta",
-  "version": "1.0.0",
-  "description": "a length of material worn as a scarf or head covering, typically with a salwar, by women from South Asia.",
-  "main": "main.js",
-  "sideEffects": false,
-  "scripts": {
-    "build": "esbuild --bundle src/index.ts --format=esm --outfile=dist/esm.js"
-  },
-  "keywords": [
-    "fp",
-    "js",
-    "maybe"
-  ],
-  "author": "gmbntt@gmail.com",
-  "license": "ISC",
-  "devDependencies": {
-    "esbuild": "^0.19.5"
-  }
+    "name": "dupatta",
+    "type": "module",
+    "version": "1.0.0",
+    "description": "a length of material worn as a scarf or head covering, typically with a salwar, by women from South Asia.",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "sideEffects": false,
+    "scripts": {
+        "build": "esbuild src/index.ts --outdir=dist --format=esm --bundle && tsc --emitDeclarationOnly",
+        "watch": "esbuild src/index.ts --outdir=dist --format=esm --bundle --watch"
+    },
+    "keywords": [
+        "fp",
+        "js",
+        "maybe"
+    ],
+    "author": "gmbntt@gmail.com",
+    "license": "ISC",
+    "devDependencies": {
+        "typescript": "^5.2.2"
+    }
 }
