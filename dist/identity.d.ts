@@ -1,1 +1,1 @@
-export declare const identity: <T extends unknown>(x: T) => T;
+export declare const identity: <T>(x: T) => T;
