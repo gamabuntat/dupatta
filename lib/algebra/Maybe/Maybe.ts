@@ -12,8 +12,8 @@ export const Just = <A>(x: A): Maybe<A> => ({
 });
 
 export const Nothing = <A>(x: A): NothingType => ({
-  isNothing: () => false,
-  isJust: () => true,
+  isNothing: () => true,
+  isJust: () => false,
   map: _fn => Nothing(x),
   ap: _f => Nothing(x),
   join: () => Nothing(x),
